@@ -10,4 +10,4 @@ const currentDate = new Date()
 
 
 let myTimeStamp = Date.now()
-console.log(myTimeStamp);
+console.log(myTimeStamp );
