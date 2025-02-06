@@ -55,8 +55,32 @@ const obj4 = {...obj1, ...obj2} // you can also merge two objects by using sprea
 
 
 
-console.log(Object.keys(result)); // it will return the keys of the object
-console.log(Object.values(result.maths)); // it will return the values of the object
-console.log(Object.entries(result)); // it will return the keys and values of the object
+// console.log(Object.keys(result)); // it will return the keys of the object
+// console.log(Object.values(result.maths)); // it will return the values of the object
+// console.log(Object.entries(result)); // it will return the keys and values of the object
 
-console.log(result.hasOwnProperty("maths")); // it will return the boolean value if the object has the key or not
+// console.log(result.hasOwnProperty("maths")); // it will return the boolean value if the object has the key or not
+
+
+
+const course = {
+    courseName: "Javascript",
+    coursePrice: 1000,
+    courseInstructor: "Karan",
+}
+ 
+
+const {courseInstructor} = course; // destructuring the object
+const {coursePrice: price} = course; // destructuring the object
+
+// console.log(courseInstructor);
+// console.log(price);
+
+// Json  or API
+
+// {
+//     "name": "hitesh",
+//     "course": "javascript",
+//     "price": "free"
+// }
+
