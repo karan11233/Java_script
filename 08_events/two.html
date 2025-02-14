@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai or Code</h1>
+    <button id="button">Stop</button>
+</body>
+<script>
+    let arr = [10,9,8,7,6,5,4,3,2,1]
+    // arr.forEach((i)=> {
+    //     setTimeout(()=> {
+    //         console.log(i);
+            
+    //     },i)
+    // })
+    // setTimeout(function(){
+
+    // },)
+    const ChangeText = function(){
+        let change = document.querySelector('h1')
+        change.innerHTML = 'my name is karan'
+    }
+    const changeMe = setTimeout(ChangeText,2000)
+
+    const button = document.getElementById('button')
+    button.addEventListener('click', ()=> {
+        clearTimeout(changeMe)
+        console.log('stop');
+    })
+
+</script>
+</html>
